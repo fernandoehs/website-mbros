@@ -2219,3 +2219,13 @@ body {
 }
 
 
+.portfolio-item  a.item-link:hover .item-img {
+	filter: saturate(0);
+	transition: filter .2s;
+	will-change: filter;
+	backface-visibility: hidden;
+}
+.portfolio-item .item-img{
+	opacity: .9;
+	filter: saturate(1);
+}
