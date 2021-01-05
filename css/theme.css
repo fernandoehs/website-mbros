@@ -1672,7 +1672,8 @@ aside section > h1 {
 	position: relative;
 }
 .portfolio-item figcaption {
-	position: absolute;
+	/*position: absolute;*/
+	float: left;
 	bottom: 0;
 	left: 0;
 	width: 100%;
@@ -1687,7 +1688,8 @@ aside section > h1 {
 }
 .portfolio-item figcaption:after {
 	content: '';
-	position: absolute;
+	/*position: absolute;*/
+	float: left;
 	left: 50%;
 	top: 50%;
 	transform: translate3d(-50%, -50%, 0);
@@ -2219,13 +2221,13 @@ body {
 }
 
 
-.portfolio-item  a.item-link:hover .item-img {
-	filter: saturate(0);
+.portfolio-item  .item-img:hover {
+	filter: saturate(1);
 	transition: filter .2s;
 	will-change: filter;
 	backface-visibility: hidden;
 }
 .portfolio-item .item-img{
 	opacity: .9;
-	filter: saturate(1);
+	filter: saturate(0);
 }
