@@ -1,6 +1,6 @@
 <?php
 
-$mailto = "where_to_send_email@example.com";
+$mailto = "parashtantas@gmail.com";
 if( isset($_POST['mailto']) ){
 	$mailto = $_POST['mailto'];
 }
@@ -35,7 +35,7 @@ $headers .= "Reply-To: " . $from_email . "\r\n";
 $headers .= "MIME-Version: 1.0\r\n";
 $headers .= "Content-Type: text/html; charset=UTF-8\r\n";
 
-if (mail ($mailto, $subject, $body, $headers)) {
+if (mail ($mailto, $subject)) {
 	echo '<p>Your message has been sent!</p>';
 } else {
 	echo '<p class="error">Something went wrong, try again!</p>';
