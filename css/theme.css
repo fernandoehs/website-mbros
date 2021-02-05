@@ -2210,7 +2210,9 @@ body {
     background-image: none;
 }
 
-/* new */
+/* NUEVO */
+
+/*POSICION DE LETRAS DE SLIDER*/
 .texto{
   background-color: rgba(255,255,255,0);
   display: block;
@@ -2221,8 +2223,18 @@ body {
   width: 100%;
   text-align: center;
 }
+
+/*
 .texto h1{
 	color: #eaeaea;
+    font-family: 'xxxx'; 
+}*/
+
+/*COLOR y FUENTE LETRAS DE SLIDER*/
+h7{
+	font-size: 4.4rem;
+	color: #eaeaea;
+    font-family: 'sans-serif';
 }
 
 .footer-about{
@@ -2237,3 +2249,4 @@ body {
 	padding:50px 10px;
 }
 }
+
