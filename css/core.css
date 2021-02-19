@@ -653,9 +653,9 @@ pre code {
 .col-lg-8,
 .col-lg-9,
 .col-lg-auto,
-
-
-
+.,
+.-1,
+.-10,
 .col-md-11,
 .col-md-12,
 .col-md-2,
@@ -7795,19 +7795,19 @@ a.text-dark:hover {
   }
 }
 .fa-rotate-90 {
-  /*-ms-filter: "progid:DXImageTransform.Microsoft.BasicImage(rotation=1)";*/
+  -ms-filter: "progid:DXImageTransform.Microsoft.BasicImage(rotation=1)";
   -webkit-transform: rotate(90deg);
   -ms-transform: rotate(90deg);
   transform: rotate(90deg);
 }
 .fa-rotate-180 {
-  /*-ms-filter: "progid:DXImageTransform.Microsoft.BasicImage(rotation=2)";*/
+  -ms-filter: "progid:DXImageTransform.Microsoft.BasicImage(rotation=2)";
   -webkit-transform: rotate(180deg);
   -ms-transform: rotate(180deg);
   transform: rotate(180deg);
 }
 .fa-rotate-270 {
-  /*-ms-filter: "progid:DXImageTransform.Microsoft.BasicImage(rotation=3)";*/
+  -ms-filter: "progid:DXImageTransform.Microsoft.BasicImage(rotation=3)";
   -webkit-transform: rotate(270deg);
   -ms-transform: rotate(270deg);
   transform: rotate(270deg);
@@ -10011,7 +10011,7 @@ a.text-dark:hover {
   clip: auto;
 }
 
-/*@charset "UTF-8";
+@charset "UTF-8";
 
 /*!
  * animate.css -http://daneden.me/animate
@@ -13022,7 +13022,7 @@ a.text-dark:hover {
   -o-transition-property: transform;
   transition-property: transform;
   transition-property: transform, -webkit-transform;
-  /*-webkit-box-sizing: -;*/
+  -webkit-box-sizing: -;
   box-sizing: content-box;
 }
 .swiper-container-android .swiper-slide,
