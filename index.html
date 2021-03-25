@@ -8,6 +8,13 @@
 	<link rel="icon" href="img/favicon.png">
 	<link rel="stylesheet" href="css/core.css">
 	<link rel="stylesheet" href="css/theme.css">
+	<script src="js/correo.js"></script>
+	<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/emailjs-com@2/dist/email.min.js"></script>
+	<script type="text/javascript">
+	(function() {
+	emailjs.init("user_J36bqIQdcKYZeO16SbYEM");
+	})();
+	</script>
 	
 </head>
 <body>
@@ -156,16 +163,19 @@
 		data-subject="Gambit Subject Line">
 		<div class="row">
 			<div class="col-md mb-3">
-				<input type="text" placeholder="Name:">
+				<input type="text" id="toName" placeholder="Name:">
 			</div>
 			<div class="col-md mb-3">
-				<input type="text" placeholder="Email:">
+				<input type="text" id="fromName" placeholder="Email:">
 			</div>
 			<div class="col-12">
-				<textarea name="" id="" rows="6" placeholder="Message..."></textarea>
+				<textarea name="" id="msg" rows="6" placeholder="Message..."></textarea>
 			</div>
 			<div class="col-12">
-				<button type="submit" class="button style-2 mb-0">Send</button>
+				<button onclick='sendMail()' class="button style-2 mb-0">Send</button>
+			</div>
+			<div class="mt8" id="submitted" style="visibility: hidden;">
+				<h3 class="mt-8">Submitted successfully !</h3>
 			</div>
 		</div>
 	</form>

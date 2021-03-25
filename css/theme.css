@@ -2257,3 +2257,7 @@ h7{
 	padding:50px 10px;
 }
 }
+
+#submitted>h3 {
+	color: red;
+} 
