@@ -2261,3 +2261,7 @@ h7{
 #submitted>h3 {
 	color: red;
 } 
+
+.videosinback {
+	display: none;
+}
